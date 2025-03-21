@@ -4,14 +4,20 @@ This PowerShell script is designed to manage port forwarding for Windows Subsyst
 ### Parameters Definition:
 
 `$OldPort` (optional): The old port that should be removed.
+
 `$NewPort` (mandatory): The new port to be forwarded.
+
 `$WSLAddress` (mandatory): The IP address of the WSL instance.
+
 
 ### Helper Functions:
 
 `Test-AdminRights()`: Checks if the script is running with administrator privileges.
+
 `Test-PortInUse($Port)`: Verifies if a given port is currently in use.
+
 `Test-WSLAddress($Address)`: Validates if the provided WSL IP address is correctly formatted.
+
 
 ### Execution Logic:
 
